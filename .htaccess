@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# Exclude exceptions
+	#RewriteRule ^wiki/ - [L]
+	RewriteCond %{REQUEST_URI} !^/wiki/
+	
+	# Exclude existing files and directories from rewriting
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	# Rewrite URLs to index.php?request=$1
+	RewriteRule ^(.+)$ index.php?request=$1 [QSA,L]
+</IfModule>

@@ -1,0 +1,417 @@
+
+/* ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ //
+// ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ //
+// ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ */
+
+/* ### ### ### */
+	/* Display */
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	/* Text */
+	/* Color */
+	/* Box */
+	/* Size */
+
+html,
+body.wcc {
+	/* Settings */
+	transition-duration: 0.2s;
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: 0;
+	/* Size */
+	height: 100%;
+	width: 100%;
+}
+
+body.wcc {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	/* Font */
+	font-family: "Verdana", sans-serif;
+	font-size: 12pt;
+	/* Color */
+	background: #eaeaea;
+	color: #222;
+	/* Size */
+	min-height: 100%;
+	height: fit-content;
+}
+body.wcc.ocut { overflow: hidden }
+body.wcc.osup { height: 100% ! important }
+
+/* ### ELEMENTS ### */
+
+.wcc h1 {
+	/* Font */
+	font-family: sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	/* Text */
+	text-align: center;
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.wcc h1.spaced {
+	/* Box */
+	margin: 1.3rem 0;
+}
+
+.wcc h1.weltis {
+	/* Settings */
+	filter: drop-shadow(2px 2px #999);
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent;
+	/* Color */
+	background: linear-gradient(0deg, #66ffc8, #6ed3ff, #ccccff);
+}
+
+.wcc h2 {
+	/* Font */
+	font-family: sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	/* Text */
+	text-align: center;
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.wcc h2.spaced {
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: .7rem 0;
+}
+
+.wcc hr {
+	/* Settings */
+	overflow: visible;
+	/* Text */
+	text-align: center;
+	/* Color */
+	color: #222;
+	/* Box */
+	border: none;
+	border-top: .3rem double #222;
+	margin: 0;
+	/* Size */
+	height: 0;
+	width: 80%;
+}
+
+.wcc hr.spaced {
+	/* Box */
+	margin: 1rem 0;
+}
+
+.wcc hr.weltis:after {
+	/* Position */
+	position: relative;
+	top: -10px;
+	/* Settings */
+	content: url('/assets/hr.png');
+	/* Color */
+	background: #eaeaea;
+	/* Box */
+	padding: 1px 5px;
+	/* Size */
+	height: 10px;
+	width: 10px;
+}
+
+.wcc button {
+	/* Settings */
+	/*filter: drop-shadow(2px 2px #999);*/
+	/* Font */
+	font-weight: bold;
+	font-family: inherit;
+	font-size: inherit;
+	/* Text */
+	/*text-align: center ! important;*/
+	/*text-align-last: center ! important;*/
+	/*text-decoration: none;*/
+	/* Color */
+	color: #eaeaea;
+	background: #444;
+	/* Box */
+	padding: 1rem 1rem;
+	border: 0;
+	border-radius: .2rem;
+	margin: 0;
+	/* Size */
+	height: auto;
+	width: auto;
+}
+
+.wcc input {
+	/* Font */
+	font-weight: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	/* Text */
+	/*text-align: center ! important;*/
+	/*text-align-last: center ! important;*/
+	/*text-decoration: none;*/
+	/* Color */
+	color: #222;
+	background: #eee;
+	/* Box */
+	padding: .6rem 1rem;
+	border: 2px solid #ddd;
+	margin: 0;
+	/* Size */
+	height: auto;
+	/*width: 3rem;*/
+	width: auto;
+}
+
+.wcc button.large {
+	/* Settings */
+	filter: drop-shadow(2px 2px #999);
+	/* Box */
+	padding: 1rem 1rem;
+	/* Size */
+	min-width: 16rem;
+}
+
+.wcc input.large {
+	/* Box */
+	border-radius: .2rem;
+	/* Size */
+	width: 100%;
+}
+
+.wcc button.medium,
+.wcc input.medium {
+	/* Box */
+	padding: .6rem 1rem;
+	border-radius: .2rem;
+	/* Size */
+	min-width: 12rem;
+}
+
+.wcc button.small {
+	/* Box */
+	padding: .3rem .6rem;
+	border-radius: 0;
+}
+
+.wcc button:hover {
+	/* Settings */
+	cursor: pointer;
+	/* Color */
+	background: #222;
+}
+
+.wcc button:active {
+	/* Settings */
+	filter: none;
+	/* Color */
+	background: #111;
+}
+
+.wcc div,
+.wcc span,
+.wcc p {
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.wcc a {
+	/* Text */
+	text-decoration: none;
+	/* Color */
+	color: inherit;
+}
+
+/* ### PSEUDOELEMENTS ### */
+
+.wcc::-webkit-scrollbar {width: 0.8rem}
+.wcc::-webkit-scrollbar-track {background: #333}
+.wcc::-webkit-scrollbar-thumb {background: #555}
+.wcc::-webkit-scrollbar-thumb:hover {background: #777}
+
+/* ### CLASSES ### */
+
+.wcc .container {
+	/* Display */
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.wcc .container.col { flex-direction: column !important }
+.wcc .container.wrap { flex-wrap: wrap !important }
+.wcc .container.ungap { gap: 0 !important }
+.wcc .container.top { justify-content: flex-start !important }
+.wcc .container.mid { justify-content: center !important }
+.wcc .container.bot { justify-content: flex-end !important }
+.wcc .container.align.start { align-items: start !important }
+.wcc .container.align.base { align-items: baseline !important }
+.wcc .container.align.center { align-items: center !important }
+.wcc .container.align.end { align-items: end !important }
+.wcc .container.even { justify-content: space-evenly !important }
+.wcc .container.between { justify-content: space-between !important }
+
+.wcc .absolute { position: absolute }
+.wcc .sticky { position: sticky }
+
+.wcc .sticky.top { top: 0 }
+
+.wcc .arrange.low { z-index: -1 }
+.wcc .arrange.mid { z-index: 1 }
+.wcc .arrange.top { z-index: 2 }
+
+.wcc .flex.full { flex-grow: 1 !important }
+.wcc .flex.lazy { flex-shrink: 1 !important }
+.wcc .flex.start { align-self: start !important }
+.wcc .flex.center { align-self: center !important }
+.wcc .flex.end { align-self: end !important }
+
+.wcc .font {
+	/* Font */
+	/*font-weight: normal;*/
+	/*font-family: "Verdana", sans-serif;*/
+	/*font-size: 12pt;*/
+}
+.wcc .mono { font-family: "Consolas", monospace !important }
+.wcc .sans { font-family: sans-serif !important }
+.wcc .serif { font-family: serif !important }
+.wcc .regular { font-weight: normal !important }
+.wcc .bold { font-weight: bold !important }
+.wcc .italic { font-style: italic !important }
+
+.wcc .text.ghost { opacity: .6 }
+.wcc .text.underline { text-decoration: underline }
+.wcc .text.link:hover { text-decoration: underline }
+
+.wcc .text.left { text-align: left ! important }
+.wcc .text.center { text-align: center ! important }
+.wcc .text.right { text-align: right ! important }
+.wcc .text.just { text-align: justify !important }
+.wcc .text.just.left { text-align-last: left !important }
+.wcc .text.just.center { text-align-last: center !important }
+.wcc .text.just.right { text-align-last: right !important }
+
+.wcc .theme.light {
+	/* Color */
+	color: #222;
+	background: #eaeaea;
+}
+.wcc .theme.light-gray {
+	/* Color */
+	color: #222;
+	background: #ddd;
+}
+.wcc .theme.gray-light {
+	/* Color */
+	color: #222;
+	background: #aaa;
+}
+.wcc .theme.gray {
+	/* Color */
+	color: #aaa;
+	background: #222;
+}
+.wcc .theme.dark {
+	/* Color */
+	color: #eaeaea;
+	background: #222;
+}
+
+.wcc .full.height { height: 100% !important }
+.wcc .full.width { width: 100% !important }
+
+/* SPECIFIC CLASSES */
+
+.wcc .navbar {
+	/* Size */
+	min-height: 3rem;
+}
+
+.wcc .article {
+	/* Box */
+	padding: 8rem 18rem;
+	padding-top: 5rem;
+}
+
+.wcc .page {
+	/* Box */
+	padding: 2rem 14rem;
+}
+
+.wcc .column.half { flex-basis: calc( 50% - 1rem ) }
+.wcc .column.third { flex-basis: calc( 30% - 1rem ) }
+
+@media screen and (max-width: 1152px) {
+.wcc .article {
+	/* Box */
+	padding: 20% 10%;
+	padding-top: 4rem;
+}
+.wcc .page {
+	/* Box */
+	padding: 2rem 10%;
+}
+}
+
+@media screen and (max-width: 704px) {
+.wcc .column.half {
+	/* Flex */
+	flex-basis: 100%;
+}
+.wcc .column.third {
+	/* Flex */
+	flex-basis: 40%;
+}
+}
+
+.wcc .footer {
+	/* Box */
+	padding: 2rem 0 3rem 0;
+	/* Size */
+	min-height: 7rem;
+}
+.wcc .footer.short {
+	/* Box */
+	padding: .5rem 0 1rem 0;
+}
+
+.wcc .paragraph {
+	/* Box */
+	padding: .5rem 0 1.5rem 0;
+}
+
+.wcc .label {
+	/* Box */
+	padding: .6rem 1rem;
+	border: 0;
+	border-radius: 0.2rem;
+	margin: 0;
+}
+
+.wcc .tag {
+	/* Box */
+	padding: .3rem 1rem;
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+}
+
+.wcc .quote:before { content: "“" }
+.wcc .quote:after { content: "”" }
